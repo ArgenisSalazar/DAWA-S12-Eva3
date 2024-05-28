@@ -1,0 +1,85 @@
+.services-section {
+    background-color: #212529;
+    /* Fondo oscuro */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.services-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    margin: 10px auto;
+}
+
+.services-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card {
+    background-color: #343a40;
+    /* Fondo de las tarjetas */
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: red;
+    margin-right: 20px;
+}
+
+.service-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin: 0;
+}

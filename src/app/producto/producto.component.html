@@ -1,0 +1,14 @@
+<div class="product-section">
+    <h2>NUESTROS PRODUCTOS</h2>
+    <p>Los mejores productos y precios.</p>
+    <div class="categories">
+        <button class="category-btn active" (click)="filterProducts('all')">TODAS LAS CATEGORIAS</button>
+        <button class="category-btn" (click)="filterProducts('embrague')">DISCO, PLATO Y COLLARÍN DE EMBRAGUE</button>
+        <button class="category-btn" (click)="filterProducts('freno')">PASTILLA Y ZAPATA DE FRENO</button>
+        <button class="category-btn" (click)="filterProducts('caja')">PIÑÓN Y PARTE DE CAJA</button>
+        <button class="category-btn" (click)="filterProducts('nueva')">NUEVA CATEGORIA</button>
+    </div>
+    <div class="product-gallery">
+        <img *ngFor="let product of filteredProducts" [src]="product.image" [alt]="product.alt">
+    </div>
+</div>

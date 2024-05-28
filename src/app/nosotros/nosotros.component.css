@@ -1,0 +1,161 @@
+.card {
+    margin: 1rem 0;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-section {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 0 0 30%; /* Ajusta el ancho de la sección de texto */
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about-cards {
+    flex: 0 0 68%; /* Ajusta el ancho de la sección de tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    max-width: 48%;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+.mission-vision-card {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.mission-vision-card:hover {
+    transform: scale(1.05);
+}
+
+.icon-container {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container i {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.service-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: white;
+    color: #212529;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-50px);
+    margin-top: -50px;
+}
+
+.stats-card {
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.stats-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.stats-icon i {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+}
+
+.stats-card h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.stats-card p {
+    font-size: 1rem;
+}

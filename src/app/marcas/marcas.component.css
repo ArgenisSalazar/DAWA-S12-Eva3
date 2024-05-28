@@ -1,0 +1,67 @@
+.about-section {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0;
+    text-align: left;
+    position: relative;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brand-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.brand-card:hover {
+    transform: scale(1.05);
+}
+
+.brand-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.brand-text {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.brand-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.brand-text p {
+    font-size: 1rem;
+    margin: 0;
+    color: #212529;
+}
+
+/* Adding space between rows */
+.row {
+    margin-top: 20px;
+}
+
+.col-md-4 {
+    margin-bottom: 30px;
+}

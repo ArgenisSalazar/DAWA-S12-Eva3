@@ -1,0 +1,88 @@
+.footer-section {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #ff4d4d;
+}
+
+.contact-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #212529;
+}
+
+.contact-box i {
+    font-size: 2rem;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.contact-box h4 {
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 0;
+}
+
+.contact-box a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.links-section {
+    text-align: left;
+}
+
+.links-section h4 {
+    margin-bottom: 20px;
+}
+
+.links-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-section ul li {
+    margin-bottom: 10px;
+}
+
+.links-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-section ul li a:hover {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+.row+.row {
+    margin-top: 30px;
+}
